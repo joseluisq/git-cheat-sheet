@@ -19,7 +19,7 @@ __Status:__ WIP. Feel free to contribute.
 
 ## Configuration
 
-### User setup
+#### User setup
 
 ```sh
 git config user.name "Name"
@@ -28,7 +28,7 @@ git config user.email '<name@email.com>'
 
 _**Tip**: Add --global flag for global config._
 
-### Sign commits using a GPG key
+#### Sign commits using a GPG key
 
 List your gpg keys:
 
@@ -49,19 +49,19 @@ git config --global user.signingkey 2AA5B24170567CE0
 
 __Tip:__ For disable signing commits temporarily try: `git config --global commit.gpgsign false`
 
-### Global .gitignore file
+#### Global .gitignore file
 
 ```sh
 git config --global core.excludesfile ~/.gitignore
 ```
 
-### Add remote origin
+#### Add remote origin
 
 ```sh
 git remote add <remote_origin> <repo_url>
 ```
 
-### Remove remote origin
+#### Remove remote origin
 
 ```sh
 git remote remove <remote_origin>
@@ -69,7 +69,7 @@ git remote remove <remote_origin>
 
 ## Commiting
 
-### Show the working tree status
+#### Show the working tree status
 
 ```sh
 git status
@@ -77,7 +77,7 @@ git status
 
 _**Tip**: Use `-sb` flag to see the status in a compact way._
 
-### Stage files to commit
+#### Stage files to commit
 
 ```sh
 git add <some_files_or_directories>
@@ -85,7 +85,7 @@ git add <some_files_or_directories>
 
 _**Tips**: Use a dot `git add .` to stage all files for commit._
 
-### Commit a change
+#### Commit a change
 
 ```sh
 git commit <some_files_or_directories>
@@ -93,7 +93,7 @@ git commit <some_files_or_directories>
 
 _**Tips**: Add `-m "Message here"` to commit with a message directly._
 
-### Change last commit message
+#### Change last commit message
 
 ```sh
 git commit --amend
@@ -101,13 +101,13 @@ git commit --amend
 
 _**Tip**: Add `--author="Name <name@email>"` to override author._
 
-### Revert previous commit but keeping last changes
+#### Revert previous commit but keeping last changes
 
 ```sh
 git reset HEAD^
 ```
 
-### Revert previous commit (no safety)
+#### Revert previous commit (no safety)
 
 _**Caution**: This command throws away all your uncommitted changes. For safety, you should always check that the output of `git status` is clean (that is, empty) before using it. [See this thread for more details](https://stackoverflow.com/a/9530204/2510591)._
 
@@ -115,7 +115,7 @@ _**Caution**: This command throws away all your uncommitted changes. For safety,
 git reset --hard HEAD
 ```
 
-### Cherry-pick a commit
+#### Cherry-pick a commit
 
 [Cherry pick](https://git-scm.com/docs/git-cherry-pick) means to choose a commit from one branch and apply it onto another. [See this thread for more details](https://stackoverflow.com/a/9339460/2510591).
 
@@ -125,7 +125,7 @@ git cherry-pick <other_branch_parent_commit> -m 1
 
 **Note**: Parent number starting from 1. [See this thread for more details](https://stackoverflow.com/a/9339460/2510591).
 
-### Cherry-pick last commit
+#### Cherry-pick last commit
 
 ```sh
 git cherry-pick $(git rev-parse <other_branch_name>) -m 1
@@ -133,19 +133,19 @@ git cherry-pick $(git rev-parse <other_branch_name>) -m 1
 
 ## Branching
 
-### Create a new branch and start it
+#### Create a new branch and start it
 
 ```sh
 git checkout -b <new_branch>
 ```
 
-### Checkout a remote branch
+#### Checkout a remote branch
 
 ```sh
 git checkout -tb <local_branch> origin/<remote_branch>
 ```
 
-### Rename a branch
+#### Rename a branch
 
 ```sh
 git branch -m <new_branch_name>
@@ -153,19 +153,19 @@ git branch -m <new_branch_name>
 
 _**Tip**: Use `-M` flag to forcing instead._
 
-### List all branches
+#### List all branches
 
 ```sh
 git branch -a
 ```
 
-### List remote branches
+#### List remote branches
 
 ```sh
 git branch -r
 ```
 
-### Delete branches
+#### Delete branches
 
 ```sh
 git branch -d <branch_name_1> <branch_name_2> <branch_name_n>
@@ -173,7 +173,7 @@ git branch -d <branch_name_1> <branch_name_2> <branch_name_n>
 
 _**Tip**: Tip: Use `-D` flag to forcing instead._
 
-### Merge two branches
+#### Merge two branches
 
 ```sh
 git checkout <target_branch>
@@ -184,7 +184,7 @@ _**Tip**: Add `--squash` flat for a squash merging._
 
 ## Pulling
 
-### Pull changes from remote server but saving uncommitted changes
+#### Pull changes from remote server but saving uncommitted changes
 
 This command makes this for you:
 
@@ -200,7 +200,7 @@ _**Tip:** Skip `--rebase` if you want to merge your changes with the remote chan
 
 ## Pushing
 
-### Push changes to remote server
+#### Push changes to remote server
 
 ```sh
 git push <remote_origin> <branch_name>
@@ -208,13 +208,13 @@ git push <remote_origin> <branch_name>
 
 ## Logging
 
-### Show log info of last commit 
+#### Show log info of last commit 
 
 ```sh
 git log -1 HEAD
 ```
 
-### Show logs in a fancy way
+#### Show logs in a fancy way
 
 ```sh
 git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -222,13 +222,13 @@ git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s 
 
 ## Tagging
 
-### Create a tag
+#### Create a tag
 
 ```sh
 git tag v1.0.0
 ```
 
-### Delete a tag
+#### Delete a tag
 
 ```sh
 git tag -d v1.0.0
@@ -236,7 +236,7 @@ git tag -d v1.0.0
 
 ## Reflog
 
-### Find and manage the history of all your Git stuff
+#### Find and manage the history of all your Git stuff
 
 ```sh
 git reflog
