@@ -269,6 +269,7 @@ git last
 ## Resources
 
 - https://git-scm.com/docs
+- https://github.com/nvie/gitflow
 - https://github.com/jakubpawlowicz/git-cheat-sheet
 - https://github.com/git-tips/tips
 - https://github.com/razzius/git-tricks
