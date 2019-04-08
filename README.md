@@ -263,7 +263,7 @@ git last
 
 ## Bonus
 
-- [git-useful-aliases](https://github.com/joseluisq/git-useful-aliases) — Set of useful aliases out of the box you can try 
+- [git-useful-aliases](https://github.com/joseluisq/git-useful-aliases) — Set of useful Git aliases.
 - [GitNow](https://github.com/joseluisq/gitnow) — Speed up your Git workflow.
 
 ## Resources
