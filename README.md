@@ -2,8 +2,6 @@
 
 > Another Git cheat sheet yet :octocat:
 
-__Status:__ WIP. Feel free to contribute.
-
 ## Menu
 - [Configuration](#commiting)
 - [Commiting](#commiting)
@@ -15,6 +13,7 @@ __Status:__ WIP. Feel free to contribute.
 - [Reflog](#reflog)
 - [Resolve conflicts](#resolve-conflicts)
 - [Aliases](#aliases)
+- [Bonus](#bonus)
 - [Resources](#resources)
 
 ## Configuration
@@ -244,6 +243,8 @@ git reflog
 
 ## Resolve conflicts
 
+TODO
+
 ## Aliases
 
 If you don't want to type the entire text of each of the Git commands above, you can easily set up an alias for each command and then just run it.
@@ -260,7 +261,10 @@ Then just run:
 git last
 ```
 
-__Tip:__ If you are looking for a set of useful aliases out of the box you can try [git-useful-aliases](https://github.com/joseluisq/git-useful-aliases).
+## Bonus
+
+- [git-useful-aliases](https://github.com/joseluisq/git-useful-aliases) — Set of useful aliases out of the box you can try 
+- [GitNow](https://github.com/joseluisq/gitnow) — Speed up your Git workflow.
 
 ## Resources
 
